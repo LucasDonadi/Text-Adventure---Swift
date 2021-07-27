@@ -1,0 +1,87 @@
+{   "salas":[
+        {
+            "cena_id":0,
+            "cena_nome": "O Início",
+            "cena_texto": "Você abre os olhos e está sentado em uma cadeira, dentro de um quarto pequeno e com pouca iluminação. Você vê um INTERRUPTOR na parede que está a sua frente. Ao lado oposto, há uma JANELA. Abaixo de sua cadeira há uma PEDRA. Uma PORTA aparece a distância.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"INTERRUPTOR",
+                    "obj_texto":"Um interruptor comum. Parece estar fora de uso.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"O interruptor está quebrado e sem efeito.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"JANELA",
+                    "obj_texto":"Um dos vidros está rachado.",
+                    "obj_positivo":"A pedra quebrou a janela e você passou por ela.",
+                    "obj_negativo":"Não vai funcionar.",
+                    "obj_comando":"USE PEDRA WITH JANELA",
+                    "obj_cena_alvo":2
+                },
+                {
+                    "obj_id":2,
+                    "obj_tipo":"INVENTORY_OBJECT",
+                    "obj_nome":"PEDRA",
+                    "obj_texto":"Uma pedra comum, pequena e pesada (parece ideal para quebrar vidros)",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"Não posso fazer isso com a pedra.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1
+                },
+                {
+                    "obj_id":3,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"PORTA",
+                    "obj_texto":"A porta parece estar aberta",
+                    "obj_positivo":"Você abriu a porta e passou por ela.",
+                    "obj_negativo":"Não consigo fazer isso com a porta.",
+                    "obj_comando":"USE PORTA",
+                    "obj_cena_alvo":1
+                }
+            ]
+            
+        },
+        {
+            "cena_id":1,
+            "cena_nome":"Corredor escuro",
+            "cena_texto":"Você entrou em um corredor completamente escuro. Talvez conseguiria enxerga algo se tivesse algum objeto para iluminar o caminho. Por enquanto, Há uma PORTA para voltar.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"PORTA",
+                    "obj_texto":"A porta parece estar aberta",
+                    "obj_positivo":"Você abriu a porta e passou por ela.",
+                    "obj_negativo":"Não consigo fazer isso com a porta.",
+                    "obj_comando":"USE PORTA",
+                    "obj_cena_alvo":0
+                }
+            ]
+            
+        },
+        {
+            "cena_id":2,
+            "cena_nome":"Penhasco",
+            "cena_texto":"À sua frente há um penhasco. Não há saída. A única coisa prudente é voltar pela JANELA.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"JANELA",
+                    "obj_texto":"A janela está com o vidro estilhaçado",
+                    "obj_positivo":"Você passou pela janela.",
+                    "obj_negativo":"Não consigo fazer isso com a janela.",
+                    "obj_comando":"USE JANELA",
+                    "obj_cena_alvo":0
+                }
+            ]
+
+        }
+    ]
+}
