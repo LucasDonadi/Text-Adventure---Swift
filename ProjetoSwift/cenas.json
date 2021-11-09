@@ -1,0 +1,496 @@
+{   "cenas": [
+        {
+            "cena_id":0,
+            "cena_nome": "Início: Sala Escura",
+            "cena_texto": "Você acorda no centro de uma sala escura, com um pequena entrada de luz que permitia ver, ao seu lado, uma CHAVE DE FENDA em cima de um criado-mudo e na sua frente, uma PORTA, aparentemente, antiga. ",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"CHAVE DE FENDA",
+                    "obj_texto":"A chave de fenda é muito utilizada para concertos domésticos, pois é feita para apertar ao máximo o parafuso de mesas, cadeiras, cabeceiras, entre outros.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"A CHAVE DE FENDA não serve para isso.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"PORTA",
+                    "obj_texto":"Porta comum de madeira, aparentemente, velha e com as dobradiças enferrujadas.",
+                    "obj_positivo":"Com a CHAVE DE FENDA, as dobradiças da PORTA foram retiradas e você conseguiu sair da sala.",
+                    "obj_negativo":"A PORTA está trancada.",
+                    "obj_comando":"USE CHAVE DE FENDA WITH PORTA",
+                    "obj_cena_alvo":1,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":1,
+            "cena_nome": "Corredor",
+            "cena_texto": "Após sair da sala, você se encontra em corredor, as paredes são brancas e te fazem lembrar de um hospital, ao fundo, você vê um ELEVADOR à sua esquerda. Em uma mesa, próxima ao ELEVADOR, está jogado um CARTÃO DE IDENTIFICAÇÃO.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"CARTÃO DE IDENTIFICAÇÃO",
+                    "obj_texto":"Cartão magnético de uso exclusivo dos funcionários. possibilita acessar as salas do hospital e demais áreas restritas.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"O CARTÃO DE IDENTIFICAÇÃO não serve para isso",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"ELEVADOR",
+                    "obj_texto":"Elevador de uso restrito dos funcionários, somente pessoas identificadas.",
+                    "obj_positivo":"Utilizando o CARTÃO DE IDENTIFICAÇÃO, você conseguiu chegar a cobertura do hospital.",
+                    "obj_negativo":"Para utilizar o ELEVADOR, se identifique.",
+                    "obj_comando":"USE CARTÃO DE IDENTIFICAÇÃO WITH ELEVADOR",
+                    "obj_cena_alvo":2,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":2,
+            "cena_nome": "Cobertura do hospital",
+            "cena_texto": "Ao chegar na cobertura, você observa o caos que assola a cidade. Percebe também, que a cobertura possui um heliporto e por sorte, o HELICÓPTERO, ainda permanece lá. Você faz uma varredura dentro do veículo e percebe que a CHAVE está sobre o banco do piloto. ",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"CHAVE",
+                    "obj_texto":"Chave de ignição do helicóptero.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"A CHAVE não serve para isso.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"HELICÓPTERO",
+                    "obj_texto":"Veículo de transporte aéreo.",
+                    "obj_positivo":"Ligando o HELICÓPTERO com a CHAVE, você conseguiu sair da cobertura do hospital",
+                    "obj_negativo":"O HELICÓPTERO está desligado.",
+                    "obj_comando":"USE CHAVE WITH HELICÓPTERO",
+                    "obj_cena_alvo":3,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":3,
+            "cena_nome": "Cidade - Centro",
+            "cena_texto": "O helicóptero estava com pouca gasolina e você tem que aterrissar no meio da cidade, que está desvastada, você está confuso, sem entender o que aconteceu com a cidade. Você precisa chegar até sua casa, mas uma BARRICADA MILITAR está impedindo o caminho. Ao redor, você observa algumas PLACAS DE TRÂNSITO jogadas na calçada e uma TÁBUA, extremamente grande, apoiada na porta de uma loja. ",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"TÁBUA",
+                    "obj_texto":"Tábua de madeira maçiça, extremamente grande.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"A TÁBUA não te ajudará dessa forma.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"BARRICADA MILITAR",
+                    "obj_texto":"Barricada militar com mais de um metro de altura, cheia de espinhos e outros objetos pontiagudos.",
+                    "obj_positivo":"Colocando a TÁBUA sobre a BARRICADA MILITAR, você conseguiu atravessar o obstáculo.",
+                    "obj_negativo":"É impossível transpor a BARRICADA MILITAR sem auxílio.",
+                    "obj_comando":"USE TÁBUA WITH BARRICADA MILITAR",
+                    "obj_cena_alvo":4,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":2,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"PLACAS DE TRÂNSITO",
+                    "obj_texto":"Placas de sinalização de trânsito.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"As PLACAS DE TRÂNSITO não servem para isso",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":4,
+            "cena_nome": "Cidade - Longe de casa",
+            "cena_texto": "Você precisa chegar em casa, para se proteger e tentar entender o que está acontecendo. A cidade está, totalmente, vazia. Logo atrás da barricada militar, uma BICICLETA pequena, está jogada. Você percebe que câmbio traseiro está desregulado e desse jeito ela não serve para nada. Numa bolsa, amarrada no quadro da bicicleta, você vê uma CHAVE PHILLIPS.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"BICICLETA",
+                    "obj_texto":"Bicicleta pequena, com o câmbio traseiro desregulado, impedindo a movimentação da bicicleta",
+                    "obj_positivo":"Com a CHAVE DE FENDA, você conseguiu minimizar o problema do câmbio da BICICLETA, possibilitando o seu uso.",
+                    "obj_negativo":"A BICICLETA está com o câmbio traseiro desregulado.",
+                    "obj_comando":"USE CHAVE DE FENDA WITH BICICLETA",
+                    "obj_cena_alvo":5,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"CHAVE PHILLIPS",
+                    "obj_texto":"A chave phillips é muito utilizada para concertos domésticos, pois é feita para apertar ao máximo o parafuso de mesas, cadeiras, cabeceiras, entre outros.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"A chave phillips não serve para isso.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":5,
+            "cena_nome": "Cidade - Quintal de casa",
+            "cena_texto": "Após pedalar por uns 45 minutos, o câmbio traseiro da bicicleta trava de vez, impossibilitando o uso da bicicleta, por sorte, você já está perto de casa, mais ou menos, 5 quadras de distância. Você termina o percuso a pé. Ao chegar na casa, você percebe que está sem as chaves de casa. No quintal, você avista uma ESCADA, próxima a JANELA do seu quarto. ",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"ESCADA",
+                    "obj_texto":"Escada alta, com presilhas de segurança.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"A ESCADA não é útil para isso.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"JANELA",
+                    "obj_texto":"Janela do primeiro andar, que geralmente, fica destrancada.",
+                    "obj_positivo":"Com a ESCADA, você alcançou a JANELA e conseguiu entrar na casa.",
+                    "obj_negativo":"A JANELA é muito alta.",
+                    "obj_comando":"USE ESCADA WITH JANELA",
+                    "obj_cena_alvo":6,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":6,
+            "cena_nome": "Casa - Quarto",
+            "cena_texto": "Ao entrar pela janela, você percebe que a casa está abandonada, pelo estado que o quarto apresentava. E para seu azar, a PORTA estava emperrada e com uma fresta aberta. Ao olhar pelo seu quarto, você vê um TACO DE BEISEBOL, enroscado na parede.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"TACO DE BEISEBOL",
+                    "obj_texto":"Taco de beisebol, utilizado para prática do esporte.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"O TACO DE BEISEBOL não serve para isso.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"PORTA",
+                    "obj_texto":"Porta de madeira envernizada, com somente uma fresta aberta, de certa forma emperrada.",
+                    "obj_positivo":"Com o TACO DE BEISEBOL, você conseguiu fazer uma alavanca que abriu a PORTA.",
+                    "obj_negativo":"A PORTA está emperrada.",
+                    "obj_comando":"USE TACO DE BEISEBOL WITH PORTA",
+                    "obj_cena_alvo":7,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":7,
+            "cena_nome": "Casa - Térreo",
+            "cena_texto": "Descendo as escadas, você repara na quantidade de correspôndencias e cartas, na frente da porta, uma delas chama a sua atenção, uma carta pedindo a evacuação imediata da cidade, por motivos de segurança, devido a iminência de um ataque através da fronteira acontecer. A carta pedia que todos evacuassem a cidade até o dia 03/11/2044. Sobre a mesa está um calendário digital que mostra que você está no dia 02/11/2044. A sua frente, uma PORTA, de leva de volta a rua e na mesa você vê a CHAVE.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"CHAVE",
+                    "obj_texto":"Chave, possivelmente da porta da casa.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"A chave não abre isso.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"PORTA",
+                    "obj_texto":"Porta envernizada, exatamente igual a do quarto.",
+                    "obj_positivo":"Com a CHAVE você conseguiu destrancar a PORTA e sair de casa.",
+                    "obj_negativo":"A PORTA está trancada.",
+                    "obj_comando":"USE CHAVE WITH PORTA",
+                    "obj_cena_alvo":8,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":8,
+            "cena_nome": "Rua de casa",
+            "cena_texto": "Assustado com a descoberta da evacuação, você se vê obrigado a fugir da cidade para sobreviver. Na frente de casa, você vê um CARRO, mas ele está trancado. Vasculhando pelas redondezas, você encontra materiais de construção e no de tudo um TIJOLO.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"TIJOLO",
+                    "obj_texto":"O tijolo é utilizado na construção civil.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"O TIJOLO não serve para isso.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"CARRO",
+                    "obj_texto":"Veículo de transporte terrestre, está trancado.",
+                    "obj_positivo":"Arremessando o TIJOLO contra o vidro, você conseguiu entrar no CARRO",
+                    "obj_negativo":"O CARRO está trancado.",
+                    "obj_comando":"USE TIJOLO WITH CARRO",
+                    "obj_cena_alvo":9,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":9,
+            "cena_nome": "Dentro do carro",
+            "cena_texto": "Após entrar no carro, você precisa agora, conseguir dar partida nele. Dentro do carro, você pode verificar o PORTA-LUVAS e o PORTA OBJETOS.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"PORTA-LUVAS",
+                    "obj_texto":"O porta-luvas serve para guardar manual, chave reserva e demais itens.",
+                    "obj_positivo":"Abrindo o PORTA-LUVAS, você encontra a chave reserva e consegue ligar o carro, saindo da sua rua.",
+                    "obj_negativo":"NENHUM",
+                    "obj_comando":"USE PORTA-LUVAS",
+                    "obj_cena_alvo":10,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"PORTA OBJETOS",
+                    "obj_texto":"O porta objetos pode guardar moedas, carteira, copos e etc.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"Não há nada que ajude a ligar o carro no PORTA OBJETOS, somente algumas moedas e uma caneta.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":10,
+            "cena_nome": "Parada inesperada",
+            "cena_texto": "Você estava se dirigindo para fora da cidade, quando foi surpreendido por uma pane seca e por isso teve abandonar o carro. Falta mais ou menos un 6KM para conseguir sair da cidade. Você percebe que o carro parou próximo a uma chácara temática, estilo fazendinha, bem na frente da chácara você observa um CAVALO. Chegando mais perto, você vê que além do animal, têm também um CELA.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"CELA",
+                    "obj_texto":"Usado na montaria de cavalos.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"Não tem utilidade, sozinho.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"CAVALO",
+                    "obj_texto":"O cavalo é um animal que pode ajudar no transporte de humanos e cargas.",
+                    "obj_positivo":"Após colocar a CELA no CAVALO, você continuou o seu caminho para fora da cidade.",
+                    "obj_negativo":"Não é possível montar no CAVALO, desse jeito.",
+                    "obj_comando":"USE CELA WITH CAVALO",
+                    "obj_cena_alvo":11,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":11,
+            "cena_nome": "Em frente a farmácia",
+            "cena_texto": "Parece que o ataque começou antes, você estava andando a cavalo para sair da cidade, quando ouvir o primeiro som de tiro, seguido de algumas pequenas explosões. Com isso o cavalo se assustou e você caiu, nesse momento o cavalo fugiu, sentindo muita dor e precisando sair da cidade, você continua seu caminho, visto que os ataques já começaram. Por sorte, você passa na frente de uma farmácia e pensa em entrar para encontrar algo que diminua sua dor, já que o tombo foi feio e você machucou o ombro e a clavícula. A farmácia tem uma VITRINE toda em vidro e você vê, encostado na parede uma MARRETA, que devia pertencer a uma obra, que foi largada às pressas, devido a evacuação.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"MARRETA",
+                    "obj_texto":"Usado para quebrar paredes e demais estruturas na construção civil.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"A MARRETA não serve para isso.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"VITRINE",
+                    "obj_texto":"Vitrine em blindex, que possibilitava ver a farmácia.",
+                    "obj_positivo":"Você cosenguiu entrar na farmácia, após quebrar a VITRINE com a MARRETA.",
+                    "obj_negativo":"A VITRINE está intacta.",
+                    "obj_comando":"USE MARRETA WITH VITRINE",
+                    "obj_cena_alvo":12,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":12,
+            "cena_nome": "Dentro da farmácia",
+            "cena_texto": "Você conseguiu entrar na farmácia, agora você vê ANTIBIÓTICOS e ANALGÉSICOS. No fundo da farmácia, tem um BEBEDOURO.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"ANTIBIÓTICOS",
+                    "obj_texto":"Medicamentos para tratamento contra bactérias e vírus.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"Não pode ser tomado sem água.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"ANALGÉSICOS",
+                    "obj_texto":"Medicamentos para tratamento de dores.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"Não pode ser tomado sem água.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":2,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"BEBEDOURO",
+                    "obj_texto":"Recipiente com água para atender quem estiver com sede.",
+                    "obj_positivo":"Após tomar os ANALGÉSICOS com um copinho de água do BEBEDOURO, você saiu da farmácia e continuou o caminho para fora da cidade.",
+                    "obj_negativo":"Você tomou um copinho de água.",
+                    "obj_comando":"USE ANALGÉSICOS WITH BEBEDOURO",
+                    "obj_cena_alvo":13,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":13,
+            "cena_nome": "Próximo a fronteira da cidade",
+            "cena_texto": "Você já consegue ver o fim da cidade, seu objetivo em busca da sobrevivência. Faltam apenas, poucos metros, para enfim, pode respirar aliviado. Da para ver a alegria no seu rosto, quando de repente, você percebe que a ponte de saída da cidade está com uma parte quebrada, mais ou menos, um VÃO de uns 5 metros. Você percebe também que um CABO DE AÇO, que sustentava aquela parte da ponte, está pendurado. ",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"COLLECTABLE",
+                    "obj_nome":"CABO DE AÇO",
+                    "obj_texto":"Cabo de aço, usado para sustentação da ponte.",
+                    "obj_positivo":"NENHUM",
+                    "obj_negativo":"O CABO DE AÇO não serve para isso.",
+                    "obj_comando":"NENHUM",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                },
+                {
+                    "obj_id":1,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"VÃO",
+                    "obj_texto":"Vão de 5 ou 6 metros que se formou com a destruição daquele pedaço da ponte.",
+                    "obj_positivo":"Utilizando o CABO DE AÇO como uma corda, você conseguiu atravessar o VÃO que existe na ponte e chegar no outro lado.",
+                    "obj_negativo":"O VÃO é muito grande para tentar pular para o outro lado.",
+                    "obj_comando":"USE CABO DE AÇO WITH VÃO",
+                    "obj_cena_alvo":14,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        },
+        {
+            "cena_id":14,
+            "cena_nome": "Fim",
+            "cena_texto": "Chegando do outro lado da ponte, já em segurança, você olha para trás e vê sua cidade natal, sendo destruída. Você sente um misto de alegria e tristeza, pois embora você esteja bem e em segurança, a sua cidade natal está, permanentemente, destruída. Após alguns minutos, você repara que a existência de uma espécie de GUIA, insculpido em madeira.",
+            "objetos":[
+                {
+                    "obj_id":0,
+                    "obj_tipo":"SCENE_OBJECT",
+                    "obj_nome":"GUIA",
+                    "obj_texto":"Guia insculpido em madeira, para os sobreviventes lerem.",
+                    "obj_positivo":"Você conseguiu sair com vida dessa situação adversa e extremamente complicada. Tudo isso era um treinamento e não passava de uma simulação. Contagem, 5, 4, 3, 2, 1. Você acorda, assustado, dentro de uma base militar e sem lembrar de nada.",
+                    "obj_negativo":"NENHUM",
+                    "obj_comando":"USE GUIA",
+                    "obj_cena_alvo":-1,
+                    "resolvido": false,
+                    "obtido": false
+                }
+            ]
+            
+        }
+    ],
+  "cena_atual": 0
+}
